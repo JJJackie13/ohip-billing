@@ -109,6 +109,8 @@ Add this to your headers:
 Authorization: Bearer your-jwt-token
 ```
 #### 3. Common Endpoints
+POST /Signup
+
 POST /login
 
 POST /patients
@@ -119,11 +121,19 @@ GET /patients
 
 GET /providers
 
+POST /encounters
+
+POST /billing
+
 GET /billing/:id
 
-GET /patients/:id/billings
+GET /billings/patient/:id
+
+GET /patients/:id/total-billing
 
 GET /fee-schedule/:code
+
+GET /billing-summary
 
 ### 📄 Swagger Docs
 Available at:
