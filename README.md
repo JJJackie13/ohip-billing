@@ -50,19 +50,19 @@ A backend system built with **NestJS** to simplify medical billing processes bas
 - PostgreSQL 13+
 - MongoDB
 
-### Clone the Repo
+### 1. Clone the Repo
 
 ```bash
 git clone https://github.com/your-username/ohip-nestjs-api.git
 cd ohip-nestjs-api
 
-2. Install Dependencies
-bash
+ ### 2. Install Dependencies
+```bash
 npm install
 
-3. Environment Variables
+### 3. Environment Variables
 Create a .env file in the root directory:
-env
+```env
 PORT=3000
 JWT_SECRET=your_jwt_secret
 POSTGRES_HOST=localhost
@@ -75,11 +75,11 @@ Run Migrations (If applicable)
 bash
 npm run typeorm:migration:run
 
-4. Run the App
-bash
+### 4. Run the App
+```bash
 npm run start:dev
 
-🧪 Testing API with Postman
+### 🧪 Testing API with Postman
 Login endpoint:
 Use Postman or curl to interact with the API.
 
