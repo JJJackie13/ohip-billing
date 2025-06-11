@@ -53,8 +53,8 @@ A backend system built with **NestJS** to simplify medical billing processes bas
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/ohip-nestjs-api.git
-cd ohip-nestjs-api
+git clone https://github.com/JJJackie13/ohip-billing.git
+cd ohip-billing
 ```
 
  ### 2. Install Dependencies
@@ -73,7 +73,10 @@ POSTGRES_USER=your_user
 POSTGRES_PASSWORD=your_password
 POSTGRES_DB=ohip_billing
 MONGO_URI=mongodb://localhost:27017/ohip_metadata
+
 Run Migrations (If applicable)
+```
+```
 bash
 npm run typeorm:migration:run
 ```
@@ -109,17 +112,17 @@ Add this to your headers:
 Authorization: Bearer your-jwt-token
 ```
 #### 3. Common Endpoints
-POST /Signup
+POST Signup /auth/signup
 
-POST /login
+POST login /auth/login
 
-POST /patients
+POST patients /patients
 
-POST /providers
+POST providers /providers
 
-GET /patients
+GET patients /patients
 
-GET /providers
+GET providers /providers
 
 POST /encounters
 
