@@ -1,0 +1,57 @@
+[
+  {
+    "code": "A001",
+    "description": "Minor Assessment",
+    "ohip_fee": 23.75
+  },
+  {
+    "code": "A002",
+    "description": "General Assessment",
+    "ohip_fee": 62.2
+  },
+  {
+    "code": "A003",
+    "description": "Comprehensive Basic Assessment",
+    "ohip_fee": 87.36
+  },
+  {
+    "code": "A004",
+    "description": "Focused Practice Assessment",
+    "ohip_fee": 38.35
+  },
+  {
+    "code": "A005",
+    "description": "Comprehensive Annual Care Plan (CACP) Visit",
+    "ohip_fee": 87.92
+  },
+  {
+    "code": "A006",
+    "description": "General Re-assessment",
+    "ohip_fee": 45.9
+  },
+  {
+    "code": "A007",
+    "description": "Intermediate Assessment",
+    "ohip_fee": 37.95
+  },
+  {
+    "code": "A008",
+    "description": "Pre-natal visit",
+    "ohip_fee": 13.06
+  },
+  {
+    "code": "A010",
+    "description": "Specialist Consultation",
+    "ohip_fee": 87.92
+  },
+  {
+    "code": "A011",
+    "description": "Limited Consultation",
+    "ohip_fee": 45.9
+  },
+  {
+    "code": "A013",
+    "description": "Repeat Consultation",
+    "ohip_fee": 64.65
+  }
+]
