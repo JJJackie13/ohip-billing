@@ -55,10 +55,12 @@ A backend system built with **NestJS** to simplify medical billing processes bas
 ```bash
 git clone https://github.com/your-username/ohip-nestjs-api.git
 cd ohip-nestjs-api
+```
 
  ### 2. Install Dependencies
 ```bash
 npm install
+```
 
 ### 3. Environment Variables
 Create a .env file in the root directory:
@@ -74,34 +76,39 @@ MONGO_URI=mongodb://localhost:27017/ohip_metadata
 Run Migrations (If applicable)
 bash
 npm run typeorm:migration:run
+```
 
 ### 4. Run the App
 ```bash
 npm run start:dev
+```
 
 ### 🧪 Testing API with Postman
 Login endpoint:
 Use Postman or curl to interact with the API.
 
-1. Login
-http
+#### 1. Login
+```http
 POST /auth/login
 {
   "email": "doctor@example.com",
   "password": "securepassword"
 }
+```
+
 Response:
-json
+```json
 {
   "access_token": "your-jwt-token"
 }
+```
 
-2. Authenticated Requests
+#### 2. Authenticated Requests
 Add this to your headers:
-makefile
+```makefile
 Authorization: Bearer your-jwt-token
-
-3. Common Endpoints
+```
+#### 3. Common Endpoints
 POST /login
 
 POST /patients
@@ -118,38 +125,37 @@ GET /patients/:id/billings
 
 GET /fee-schedule/:code
 
-📄 Swagger Docs
+### 📄 Swagger Docs
 Available at:
 
-bash
-Copy
-Edit
+```bash
 http://localhost:3000/api
-🗂️ Project Structure
-bash
-Copy
-Edit
+```
+### 🗂️ Project Structure
+```bash
 src/
 ├── auth/           # Auth module (JWT, guards)
 ├── users/          # User management
 ├── patients/       # Patient CRUD
-├── physicians/     # Physician CRUD
-├── claims/         # Billing claims logic
-├── fees/           # OHIP fee code handling
+├── providers/      # Physician CRUD
+├── encounters/     # Billing claims logic
+├── billings/       # OHIP fee code handling
+├── feeschedule/    # Ohip fee schedule
 ├── common/         # DTOs, interceptors, guards
 ├── main.ts         # App entry point
-🧑‍💻 Author
+├── app.module.ts   # Root module that wires together all other modules
+```
+
+### 🧑‍💻 Author
 Jacky Leung
 Full Stack Developer
 📍 Toronto, ON
 🔗 LinkedIn
 
-📜 License
+### 📜 License
 MIT © 2025 Jacky Leung
 
-yaml
-Copy
-Edit
+```yaml
 
 ---
 
@@ -157,5 +163,6 @@ Let me know if you want me to include:
 - Example Swagger screenshots
 - Dockerfile + `docker-compose.yml`
 - Seed scripts for fake patients and fees
+```
 
 Just say the word!
